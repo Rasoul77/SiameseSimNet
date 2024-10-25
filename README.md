@@ -1,7 +1,7 @@
 # SiameseSimNet
 A Simple Pytorch Siamese Network for Image Similarity Learning
 
-# Data folder structure
+## Data folder structure
 The images shall be organized in a `root_dir` such that there exist a sub-folder per class name, 
 ```plaintext
 .
@@ -17,7 +17,7 @@ root_dir
     ├── image02.png/jpg
 ```
 
-# Training phase
+## Training phase
 Modify `config.py` accoding to your application and run `train.py` with the following pattern,
 
 ```
@@ -28,5 +28,5 @@ python3 train.py --data-path <path to root_dir> \ # Mandatory
 
 The results of training will be saved into a checkpoint directory named `weights`.
 
-# Inference phase
+## Inference phase
 In order to select a set of representative candidates of each class from the training data, we first run `select_ref_images.py` that creates an output directory with `reference images` that will be used together with the pre-trained model for inference. For an example of how to do inference see [this Kaggle demo notebook](https://www.kaggle.com/code/rasoulmojtahedzadeh/siamese-inference-axial-t2) which is part of the RSNA 2024 Lumbar Spine Degenerative Classification competition.
