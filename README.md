@@ -4,7 +4,6 @@ A Simple Pytorch Siamese Network for Image Similarity Learning
 ## Data folder structure
 The images shall be organized in a `root_dir` such that there exist a sub-folder per class name, 
 ```plaintext
-.
 root_dir
 ├── Class1
 |   ├── image01.png/jpg
